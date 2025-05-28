@@ -1,0 +1,54 @@
+.tools.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.tool-btn {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #333;
+  border-radius: 999px;
+  background-color: white;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tool-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.tool-btn:hover .tool-icon {
+  filter: brightness(0) invert(1); /* Invert icon to appear white on black bg */
+}
+
+.tool-icon {
+  width: 18px;
+  height: 18px;
+  transition: filter 0.2s ease;
+}
+
+.tools-buttons a {
+  text-decoration: none;
+  color: black;
+}
+
+.tool-btn span {
+  font-size: 12px;
+}
