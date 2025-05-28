@@ -1,0 +1,35 @@
+.banner {
+  background-image: url("https://blog.adobe.com/en/publish/2022/03/09/media_1f3c95f5647e554119ca486e7a3a77a7e0093b8a3.png?width=750&format=png&optimize=medium");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.banner h1,
+.banner p,
+.banner a {
+  margin: 10px 0;
+}
+
+.banner a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #007BFF;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
