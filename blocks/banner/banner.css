@@ -1,35 +1,90 @@
-.banner {
-  background-image: url("https://blog.adobe.com/en/publish/2022/03/09/media_1f3c95f5647e554119ca486e7a3a77a7e0093b8a3.png?width=750&format=png&optimize=medium");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner-overlay {
   position: relative;
-  color: white;
   padding: 40px 20px;
-  text-align: center;
-  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
 }
 
-.banner img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+.banner-main-text {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  margin-bottom:  2rem;
 }
 
-.banner h1,
-.banner p,
-.banner a {
-  margin: 10px 0;
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.banner a {
+.banner p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner .cta {
   display: inline-block;
-  padding: 10px 20px;
-  background: white;
-  color: #007BFF;
+  background-color: #0066FF;
+  padding: 14px 28px;
+  color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 50px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.banner .cta:hover {
+  background-color: #e65c00;
+}
+
+.banner-side-by-side {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  color: white;
+}
+
+.content-box {
+  padding: 20px 20px 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.content-box.photoshop-box{
+  background: linear-gradient(135deg, #4a90e2, #4a90e2);
+  width: 70%;
+}
+.content-box.express-box{
+  background: linear-gradient(135deg, #f24d88, #f24d88);
+}
+.content-box h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;;
+}
+
+.content-box p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.content-box .cta {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.content-box .cta:hover{
+  background-color: black;
+}
+.content-box .photoshop-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px; /* Adjust as needed */
+  margin-top: 1rem;
+  border-radius: 8px;
 }
