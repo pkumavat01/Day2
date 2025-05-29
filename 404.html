@@ -36,14 +36,64 @@
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
+      justify-content: center; /* Added to center content horizontally */
+      text-align: center; /* Added for better text alignment */
+      flex-direction: column; /* Stack children vertically */
+      padding: 2rem; /* Added padding for spacing */
     }
 
     main.error .error-number {
       width: 100%;
+      max-width: 300px; /* Limit size of SVG */
+      margin: 0 auto 1rem; /* Center and space below */
+      fill: #ff0000; /* Added red color for visibility (optional) */
     }
 
     main.error .error-number text {
       font-family: monospace;
+      font-size: 5rem; /* Increased size for emphasis */
+    }
+
+    .error-message {
+      font-size: 2rem; /* Larger heading */
+      margin-bottom: 1rem;
+      color: #333; /* Dark text */
+    }
+
+    .button-container {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    /* Added styles for the back button */
+    .error-button-back {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-button-back:hover {
+      background-color: #005fa3;
+    }
+
+    /* Style for home button to match back button */
+    .error-button-home {
+      background-color: #666;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-button-home:hover {
+      background-color: #444;
     }
   </style>
   <link rel="stylesheet" href="/styles/lazy-styles.css">
@@ -53,12 +103,10 @@
   <header></header>
   <main class="error">
     <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
       <h2 class="error-message">Page Not Found</h2>
       <p class="button-container">
         <a href="/" class="button secondary error-button-home">Go home</a>
+        <!-- Back button will be dynamically added here by JS if referrer is from same origin -->
       </p>
     </div>
   </main>
