@@ -27,11 +27,6 @@ function buildHeroBlock(main) {
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
-  if (p && h1 && (p.compareDocumentPosition(h1) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [h1, p] }));
-    main.prepend(section);
-  }
 }
 
 /**
